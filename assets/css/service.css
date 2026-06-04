@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+}
+
+/* Layer 1 Styles */
+.top-utility-bar {
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.top-contact span, .top-nav span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.top-contact i, .top-nav i {
+    color: #00addc;
+    margin-right: 5px;
+}
+
+/* Layer 2 Styles */
+.main-branding {
+    padding: 25px 0;
+    background: #fff;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 800;
+    color: #00addc;
+    display: inline-block;
+}
+
+.logo span {
+    color: #2c3e50;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.middle-contact {
+    font-size: 14px;
+    color: #444;
+}
+
+.middle-contact i { margin-right: 8px; }
+
+.support-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.head-icon {
+    font-size: 35px;
+    color: #00addc;
+}
+
+.support-text strong {
+    display: block;
+    font-size: 14px;
+}
+
+.support-text p {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Layer 3 Styles */
+.search-nav-bar {
+    background-color: #00addc;
+    padding: 10px 0;
+    color: white;
+}
+
+.category-dropdown {
+    font-weight: bold;
+    font-size: 14px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 30px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    padding: 12px 20px;
+    outline: none;
+}
+
+.search-box select {
+    border: none;
+    border-left: 1px solid #ddd;
+    padding: 0 15px;
+    color: #666;
+    background: #f9f9f9;
+}
+
+.search-box button {
+    background: #3b4d61;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.nav-icons i {
+    cursor: pointer;
+}
+
+    
+    
