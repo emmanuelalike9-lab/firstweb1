@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Payment Method — Oluwafirst Sanitary Homes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/payment.css">
+</head>
+<body>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+  <main class="payment-shell">
+    <section class="payment-card" aria-label="Payment method selection">
+      <div class="payment-header">
+        <p class="eyebrow">Checkout — Step 2 of 3</p>
+        <h1>Choose how to pay</h1>
+      </div>
+
+      <div class="order-summary" aria-label="Order summary">
+        <div>
+          <span class="summary-label">Order total</span>
+          <strong id="order-total">₦0</strong>
+        </div>
+        <span id="order-count" class="summary-meta">0 items</span>
+      </div>
+
+      <div id="methods-grid" class="methods-grid" role="radiogroup" aria-label="Available payment methods">
+        <p class="loading">Loading payment methods…</p>
+      </div>
+
+      <section id="gateway-panel" class="gateway-panel hidden" aria-live="polite">
+        <div class="gateway-header">
+          <p class="gateway-kicker">Payment gateway</p>
+          <h2 id="gateway-title">Complete your payment</h2>
+        </div>
+
+        <form id="payment-form" class="payment-form">
+          <div id="gateway-fields" class="gateway-fields"></div>
+          <button type="submit" class="submit-payment-btn">Pay now</button>
+        </form>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <div class="checkout-footer">
+        <span id="selected-summary" class="selected-summary">No method selected</span>
+        <div class="action-group">
+          <button type="button" id="back-btn" class="secondary-btn">Back</button>
+          <button id="continue-btn" class="continue-btn" type="button" disabled>Continue</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/payment.js"></script>
+</body>
+</html>

@@ -42,11 +42,13 @@ body {
     display: flex;
     gap: 18px;
     flex-wrap: wrap;
+    
 }
 
 .main-nav .nav-links a {
     color: #0f172a;
     font-weight: 600;
+    text-decoration: none;
     padding: 8px 10px;
 }
 
@@ -80,6 +82,7 @@ body {
 .hero .btn {
     background-color: #111827;
     color: #ffffff;
+    text-decoration: none;
     padding: 14px 28px;
 }
 
@@ -158,6 +161,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    
 }
 
 .contacts-list li {
@@ -168,6 +172,7 @@ body {
 
 .contacts-list a {
     color: #ffffff;
+    
 }
 
 .contacts-list a:hover {
@@ -186,17 +191,58 @@ body {
 }
 
 .icon-circle {
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .icon-circle:hover {
     opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.whatsapp-link:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.tiktok-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.tiktok-link:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
 }
 
 .instagram {background-color: #e1306c;}

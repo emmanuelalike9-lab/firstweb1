@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Oluwafirst Sanitary Homes</title>
+    <link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body>
+    <!-- <script>
+        if (!localStorage.getItem('authtoken')) {
+            window.location.href = 'signup.html';
+        }
+    </script> -->
+    <div class="container">
+        <header>
+            <h1>Checkout</h1>
+            <a href="cart.html" class="back-link">← Back to Cart</a>
+        </header>
+
+        <section class="checkout-form-section" id="checkoutFormSection" aria-label="Checkout form">
+            <form class="checkout-form" id="checkoutForm">
+                <h2>Checkout Details</h2>
+
+                <div class="form-row">
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" name="customerName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="customerState">State </label>
+                    <select id="customerState" name="customerState" required>
+                        <option value="">Select your state</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="customerLga">Local Government Area</label>
+                    <select id="customerLga" name="customerLga" required>
+                        <option value="">Select an LGA</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="customerAddress">Delivery Address</label>
+                    <textarea id="customerAddress" name="customerAddress" rows="4" placeholder="Enter your delivery address" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="customerDirections">Directions (Optional)</label>
+                    <textarea id="customerDirections" name="customerDirections" rows="5" placeholder="Enter detailed directions"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="customerNote">Order Note (Optional)</label>
+                    <textarea id="customerNote" name="customerNote" rows="3" placeholder="Any special delivery instructions?"></textarea>
+                </div>
+
+               <button type="submit" class="submit-order-btn">Place Order</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="assets/js/shopping.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

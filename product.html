@@ -6,89 +6,188 @@
   <title>Products | Oluwafirst Sanitary Homes</title>
   <link rel="stylesheet" href="assets/css/product.css">
   <link rel="icon" href="assets/img/osh.jpeg.jpeg" type="image/jpeg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <nav class="main-nav">
-    <div class="logo">OLUWAFIRST SANITARY HOMES</div>
+    <a class="logo" href="index.html">OLUWAFIRST SANITARY HOMES</a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="cart.html">Cart</a>
+      <a href="tel:+2348030721846" class="btn">Request a Plumber</a>
     </div>
   </nav>
 
-  <section class="hero">
+  <header class="hero">
     <div class="container">
-      <h1>Explore Our Premium Plumbing Collection</h1>
-      <p>Shop luxury bathroom and kitchen fixtures from trusted brands, designed for durability, style, and comfort.</p>
+      <p class="eyebrow">The Oluwafirst collection</p>
+      <h1>Fixtures for a better home.</h1>
+      <p>Explore dependable plumbing and sanitary fittings selected for modern homes.</p>
     </div>
-  </section>
+  </header>
 
-  <section class="products-section">
+  <main class="products-section">
     <div class="container">
-      <div class="section-head">
-        <h2>Featured Products</h2>
-      </div>
-      <div class="products-layout">
-        <aside class="sidebar">
-          <h3>Shop by Category</h3>
-          <ul>
-            <li><a href="water-heaters.html">Water Heaters<span>18</span></a></li>
-            <li><a href="toilets.html">Toilets<span>24</span></a></li>
-            <li><a href="taps-mixers.html">Taps & Mixers<span>61</span></a></li>
-            <li><a href="showers.html">Showers<span>33</span></a></li>
-            <li><a href="pumps-tanks.html">Pumps & Tanks<span>14</span></a></li>
-            <li><a href="pipes-fittings.html">Pipes & Fittings<span>47</span></a></li>
-            <li><a href="kitchen-wares.html">Kitchen Wares<span>29</span></a></li>
-          </ul>
-        </aside>
-
-        <div class="products-grid">
-          <article class="product-card">
-            <img src="assets/img/btap.jpeg" alt="Onyx Flat-Top Basin Mixer">
-            <div class="card-body">
-              <h3>Onyx Flat-Top Basin Mixer</h3>
-              <p>Modern basin mixer with smooth water flow and premium finish.</p>
-              <div class="price-row">
-                <span class="price">?35,000</span>
-                <span class="price-old">?40,000</span>
-              </div>
-              <a href="#" class="product-btn add-to-cart-btn" data-product-id="1" data-product-name="Onyx Flat-Top Basin Mixer" data-product-price="35000">Add to Cart</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="assets/img/jaz.jpeg" alt="Slate Dragon Basin Mixer">
-            <div class="card-body">
-              <h3>Slate Dragon Basin Mixer</h3>
-              <p>Premium basin mixer designed for long-lasting style and performance.</p>
-              <div class="price-row">
-                <span class="price">?120,000</span>
-                <span class="price-old">?130,000</span>
-              </div>
-              <a href="#" class="product-btn add-to-cart-btn" data-product-id="2" data-product-name="Slate Dragon Basin Mixer" data-product-price="120000">Add to Cart</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="assets/img/duit.jpeg" alt="Onyx Flexible Heavy Shower Set">
-            <div class="card-body">
-              <h3>Onyx Flexible Heavy Shower Set</h3>
-              <p>Luxury shower set with adjustable head and elegant brass finish.</p>
-              <div class="price-row">
-                <span class="price">?120,000</span>
-                <span class="price-old">?150,000</span>
-              </div>
-              <a href="#" class="product-btn add-to-cart-btn" data-product-id="3" data-product-name="Onyx Flexible Heavy Shower Set" data-product-price="120000">Add to Cart</a>
-            </div>
-          </article>
+      <div class="catalog-heading">
+        <div>
+          <p class="eyebrow">Browse products</p>
+          <h2>Find the right fit</h2>
         </div>
+        <label class="search-box" for="productSearch">
+          <span aria-hidden="true">&#128269;</span>
+          <input id="productSearch" type="search" placeholder="Search taps, showers, sinks..." autocomplete="off">
+        </label>
       </div>
-    </div>
-  </section>
+      <p class="result-count" id="resultCount" aria-live="polite">Showing 18 products</p>
 
-  <footer>
-    Oluwafirst Sanitary Homes � Luxury kitchen and bathroom supply, Lagos.
+      <div class="products-grid" id="productsGrid">
+        <article class="product-card" data-search="basin tap super stainless concealed basin mixer tap">
+          <img src="assets/img/btap.jpeg" alt="Basin mixer tap">
+          <div class="card-body"><h3>Basin Tap</h3><p>Super stainless concealed basin mixer tap.</p><div class="price-row"><span class="price">&#8358;25,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="1" data-product-name="Basin Tap" data-product-price="25000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="jacuzzi hydromassage freestanding round bathtub">
+          <img src="assets/img/jaz.jpeg" alt="Jacuzzi bathtub">
+          <div class="card-body"><h3>Jacuzzi</h3><p>Hydromassage freestanding round bathtub.</p><div class="price-row"><span class="price">&#8358;500,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="2" data-product-name="Jacuzzi" data-product-price="500000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="water closet concealed cistern dual flush wall hung toilet">
+          <img src="assets/img/WhatsApp Image 2026-04-19 at 20.22.17.jpeg" alt="Sensor Water Closet">
+          <div class="card-body"><h3>Sensor Water Closet</h3><p>Concealed cistern dual flush wall hung toilet with seat.</p><div class="price-row"><span class="price">&#8358;800,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="3" data-product-name="Sensor Water Closet" data-product-price="800000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="kitchen sink tap single lever modern finish">
+          <img src="assets/img/kit.jpeg" alt="Kitchen sink tap">
+          <div class="card-body"><h3>Kitchen Sink Tap</h3><p>Single lever kitchen sink tap with modern finish.</p><div class="price-row"><span class="price">&#8358;35,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="4" data-product-name="Kitchen Sink Tap" data-product-price="35000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="conduit shower golden executive concealed panel shower system">
+          <img src="assets/img/duit.jpeg" alt="Conduit shower">
+          <div class="card-body"><h3>Conduit Shower</h3><p>Golden ecutive exconcealed panel shower system.</p><div class="price-row"><span class="price">&#8358;250,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="5" data-product-name="Conduit Shower" data-product-price="250000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="water heater instant electric shower kitchen">
+          <img src="assets/img/ter.jpeg" alt="Water heater">
+          <div class="card-body"><h3>Water Heater</h3><p>Instant electric water heater for shower and kitchen use.</p><div class="price-row"><span class="price">&#8358;90,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="6" data-product-name="Water Heater" data-product-price="90000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="power shower high pressure shower head">
+          <img src="assets/img/pow.jpeg" alt="Power shower">
+          <div class="card-body"><h3>Power Shower</h3><p>High-pressure shower head for an energizing wash.</p><div class="price-row"><span class="price">&#8358;85,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="7" data-product-name="Power Shower" data-product-price="85000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="kitchen sink premium stainless steel">
+          <img src="assets/img/sik.jpeg" alt="Kitchen sink">
+          <div class="card-body"><h3>Kitchen Sink</h3><p>Premium stainless steel sink with elegant design.</p><div class="price-row"><span class="price">&#8358;35,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="8" data-product-name="Kitchen Sink" data-product-price="35000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="mirrors modern bathroom polished frames">
+          <img src="assets/img/mir.jpeg" alt="Bathroom mirror">
+          <div class="card-body"><h3>Mirrors</h3><p>Modern bathroom mirrors with clean, polished frames.</p><div class="price-row"><span class="price">&#8358;35,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="9" data-product-name="Mirrors" data-product-price="35000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="bidet washing device cleaning">
+          <img src="assets/img/bw.jpeg" alt="Bidet">
+          <div class="card-body"><h3>Bidet</h3><p>Durable washing device for efficient cleaning.</p><div class="price-row"><span class="price">&#8358;15,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="10" data-product-name="Bidet" data-product-price="15000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="wall-mounted t-shape kitchen extractor hood">
+          <img src="assets/img/extractor.jpeg" alt="Kitchen extractor hood">
+          <div class="card-body"><h3>Wall-Mounted T-Shape Kitchen Extractor Hood</h3><p>Modern T-shape design paired with smart touch
+            controls for a seamless kitchen aesthetic.</p><div class="price-row"><span class="price">&#8358;15,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="11" data-product-name="Wall-Mounted T-Shape Kitchen Extractor Hood" data-product-price="15000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="6-piece matte bathroom hardware set">
+          <img src="assets/img/hanger.jpeg" alt="Bathroom hardware set">
+          <div class="card-body"><h3>6-piece matte bathroom hardware set</h3><p>Seamlessly coordinate your bath space with a sleek, minimalist hardware set.</p><div class="price-row"><span class="price">&#8358;15,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="12" data-product-name="6-piece matte bathroom hardware set" data-product-price="15000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="conduit tap heavy duty industrial home">
+          <img src="assets/img/ctap.jpeg" alt="Conduit tap">
+          <div class="card-body"><h3>Conduit Tap</h3><p>Heavy-duty conduit tap for industrial and home use.</p><div class="price-row"><span class="price">&#8358;45,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="13" data-product-name="Conduit Tap" data-product-price="0">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="ppr fittings pipes reliable plumbing installations">
+          <img src="assets/img/fp.jpeg" alt="PPR fittings and pipes">
+          <div class="card-body"><h3>PPR Fittings &amp; Pipes</h3><p>Reliable piping and fittings for plumbing installations.</p><div class="price-row"><span class="price">&#8358;500,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="14" data-product-name="PPR Fittings &amp; Pipes" data-product-price="0">Add to Cart</a></div>
+        </article>
+
+        <article class="product-card" data-search="bathroom sink pedestal modern ceramic wash basin">
+          <img src="assets/img/basin.jpeg" alt="Pedestal sink">
+          <div class="card-body"><h3>Pedestal Sink</h3><p>Modern ceramic pedestal wash basin for compact bathrooms.</p><div class="price-row"><span class="price">&#8358;120,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="15" data-product-name="Pedestal Sink" data-product-price="120000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="steam jacuzzi shower room enclosure">
+          <img src="assets/img/tub5.jpeg" alt="steam shower cabin">
+          <div class="card-body"><h3>Steam Jacuzzi Shower</h3><p>Contemporary sliding-door enclosure for elegant bathrooms.</p><div class="price-row"><span class="price">&#8358;180,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="16" data-product-name="Steam Jacuzzi Shower " data-product-price="180000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="bathroom accessories towel rail soap holder toilet paper holder">
+          <img src="assets/img/soap.jpeg" alt="Soap dish holder">
+          <div class="card-body"><h3>Wall-Mounted Stainless Steel Soap Dish Holder</h3><p>Keep your countertops clutter-free with a wall-mounted
+            soap dish designed for modern spaces.</p><div class="price-row"><span class="price">&#8358;20,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="17" data-product-name="bathroom accessories towel rail soap holder toilet paper holder" data-product-price="20000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="stainless steel shelf">
+          <img src="assets/img/wall.jpeg" alt="Stainless steel shelf">
+          <div class="card-body"><h3>Stainless Steel Shelf</h3><p>Made from high-quality stainless steel and for longlasting protection and shine.</p><div class="price-row"><span class="price">&#8358;30,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="18" data-product-name="Stainless Steel Shelf" data-product-price="30000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="stainless steel linear shower floor drains">
+          <img src="assets/img/drain.jpeg" alt="Shower floor drains">
+          <div class="card-body"><h3>Stainless Steel Linear Shower Floor Drains</h3><p>Durable, anti-odor stainless steel trench drains designed
+            to prevent clogs and floor pooling.</p><div class="price-row"><span class="price">&#8358;12,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="19" data-product-name="Stainless Steel Linear Shower Floor Drains" data-product-price="12000">Add to Cart</a></div>
+        </article>
+        <article class="product-card" data-search="flush tank dual flush toilet cistern replacement package">
+          <img src="assets/img/piss.jpeg" alt="Urinal bowl">
+          <div class="card-body"><h3>Urinal Bowl</h3><p>Our urinal bowl is designed for modern spaces
+            ,offering superior functionality,easy maintenance and a sleek
+            look for homes,offices and commercial building.</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="20" data-product-name="Urinal Bowl" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="Automatic water pressure booster pump">
+          <img src="assets/img/pump.jpeg" alt="Automatic water pressure booster pump">
+          <div class="card-body"><h3>Automatic Water Pressure Booster Pump</h3><p>An automatic peripheral water pump with an electronic pressure controller unit, Smart
+            pressure management meets heavy-duty performance for seamless water supply control.</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="21" data-product-name="Automatic Water Pressure Booster Pump" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="Multiple rail towel hanger">
+          <img src="assets/img/tholder.jpeg" alt="Towel hanger">
+          <div class="card-body"><h3>Multiple Rail Towel Hanger</h3><p>Clean modern geometry designed to keep towels and essentials neatly organized.</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="22" data-product-name="Multiple Rail Towel Hanger" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="wall-mounted toilet paper holder with a storage shelf.">
+          <img src="assets/img/tissueholder.jpeg" alt="toilet paper holder">
+          <div class="card-body"><h3>Wall-Mounted Toilet Paper Holder With A Storage Shelf</h3><p>Smart, space-saving design featuring a built-in
+            phone shelf for  modern everyday convenience.</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="23" data-product-name="Wall-Mounted Toilet Paper Holder With A Storage Shelf" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="wall-hung toilet ">
+          <img src="assets/img/walltoilet.jpeg" alt="wall-hung toilet">
+          <div class="card-body"><h3>Wall-hung toilet</h3><p>Premium ceramic craftsmanship paired with quiet, eco-friendly
+            dual-flush activation.</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="24" data-product-name="Wall-hung Toilet" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="Bathroom Toilet Absorbent Non-Slip Foot Bath Mat">
+          <img src="assets/img/footmat.jpeg" alt="Foot bath mat">
+          <div class="card-body"><h3>Bathroom Toilet Absorbent Non-Slip Foot Bath Mat</h3><p>Refined design crafted with quick-drying,keep your bathroom floors dry and stylish.</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="25" data-product-name="Bathroom Toilet Absorbent Non-Slip Foot Bath Mat" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="3 Gas Burners + 1 Electric Hotplate">
+          <img src="assets/img/gasburner.jpeg" alt="3 Gas Burners + 1 Electric Hotplate">
+          <div class="card-body"><h3>Harmony B007 Built in Gas Hob</h3><p>3 gas burners + 1 electric hotplate, 8mm real thickness tempered glass with additional pan support and ignition with AC.</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="26" data-product-name="Harmony B007 Built in Gas Hob" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="freestanding slipper bathtub">
+          <img src="assets/img/bathtub.jpeg" alt="Freestanding slipper bathtub">
+          <div class="card-body"><h3>Freestanding Bathtub</h3><p>Transform your bathroom into a modern sanctuary with sculptured, freestanding elegance .</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="27" data-product-name="Freestanding Bathtub" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="one-piece floor mounted water closet">
+          <img src="assets/img/wc.jpeg" alt="Floor mounted water closet">
+          <div class="card-body"><h3>One-Piece Floor Mounted Water Closet</h3><p>Stylish one-piece floor-mounted water closet for modern bathrooms.</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="28" data-product-name="One-Piece Floor Mounted Water Closet" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="geepee water storage tank">
+          <img src="assets/img/tank3.jpeg" alt="Geepee Tank">
+          <div class="card-body"><h3>Geepee Water Storage Tank</h3><p>Heavy-duty overhead and ground water storage solutions built for long-lasting reliability.</p><div class="price-row"><span class="price">&#8358;600,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="29" data-product-name="Geepee Water Storage Tank" data-product-price="600000">Add to Cart</a></div>
+        </article>
+      </div>
+      <article class="product-card" data-search="wall-mounted toilet brush holders">
+          <img src="assets/img/omo.jpeg" alt="Wall-mounted toilet brush holders">
+          <div class="card-body"><h3>Wall-mounted toilet brush holders</h3><p>Sophisticated wall-mounted holders designed to complement luxury bath interiors.</p><div class="price-row"><span class="price">&#8358;60,000</span></div><a href="#" class="product-btn add-to-cart-btn" data-product-id="30" data-product-name="Wall-mounted Toilet Brush Holders" data-product-price="60000">Add to Cart</a></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No products match your search.</p>
+    </div>
+  </main>
+
+  <footer>Oluwafirst Sanitary Homes | Quality fixtures for lasting homes</footer>
   <script src="assets/js/shopping.js"></script>
+  <script src="assets/js/product.js"></script>
 </body>
 </html>

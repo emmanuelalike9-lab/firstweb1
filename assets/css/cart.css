@@ -261,6 +261,7 @@ main {
 }
 
 .checkout-btn {
+    display: inline-block;
     width: 100%;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -272,6 +273,9 @@ main {
     cursor: pointer;
     margin-top: 20px;
     transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 .checkout-btn:hover {
@@ -299,6 +303,76 @@ main {
 .continue-shopping-btn:hover {
     background-color: #667eea;
     color: white;
+}
+
+.checkout-form-section {
+    padding: 0 30px 30px;
+}
+
+.checkout-form {
+    background: #f8f9fa;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.form-row label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font: inherit;
+    resize: vertical;
+    background: #fff;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.submit-order-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 20px;
+    font-size: 1.05em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-order-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.35);
 }
 
 @keyframes slideIn {

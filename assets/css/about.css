@@ -48,6 +48,7 @@ body {
     color: #0f172a;
     font-weight: 600;
     padding: 8px 10px;
+    text-decoration: none;
 }
 
 .main-nav .nav-links a:hover {
